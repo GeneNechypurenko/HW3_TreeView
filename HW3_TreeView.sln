@@ -5,7 +5,11 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW3_TreeView", "HW3_TreeView\HW3_TreeView.csproj", "{E5F9425D-33FD-4297-9A3F-54C7811200CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary", "MusicLibrary\MusicLibrary.csproj", "{CA80F561-67D9-4D45-8417-4DDD40DE2D9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicLibrary", "MusicLibrary\MusicLibrary.csproj", "{CA80F561-67D9-4D45-8417-4DDD40DE2D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "Calendar\Calendar.csproj", "{D61BE771-F622-4B77-B989-8C333B3D6843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipsCalculator", "TipsCalculator\TipsCalculator.csproj", "{0BE5E932-CBF4-4FEC-A6C5-6EEBB1AD2A5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{CA80F561-67D9-4D45-8417-4DDD40DE2D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA80F561-67D9-4D45-8417-4DDD40DE2D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA80F561-67D9-4D45-8417-4DDD40DE2D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61BE771-F622-4B77-B989-8C333B3D6843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61BE771-F622-4B77-B989-8C333B3D6843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61BE771-F622-4B77-B989-8C333B3D6843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61BE771-F622-4B77-B989-8C333B3D6843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE5E932-CBF4-4FEC-A6C5-6EEBB1AD2A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE5E932-CBF4-4FEC-A6C5-6EEBB1AD2A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE5E932-CBF4-4FEC-A6C5-6EEBB1AD2A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE5E932-CBF4-4FEC-A6C5-6EEBB1AD2A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
