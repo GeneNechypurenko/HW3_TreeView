@@ -16,24 +16,50 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Name ="artistPanel" Grid.Column="0" Orientation="Vertical" Background="MistyRose">
-            <TextBlock Text="Artists" FontWeight="Bold" Margin="5"/>
+            <TextBlock Text="Artists" FontWeight="Black" Margin="5"/>
+            <ListBox Name="artistListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="MistyRose">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Name="artistTextBlock" Text="{Binding Name}" MouseDown="artistTextBlock_MouseDown"></TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Orientation="Vertical" Background="White">
-            <TextBlock Text="Albums" FontWeight="Bold" Margin="5"/>
-            <StackPanel Name ="albumPanel">
-            </StackPanel>
+            <TextBlock Text="Albums" FontWeight="Black" Margin="5"/>
+            <ListBox Name="albumListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="White">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Name="albumTextBlock" Text="{Binding Name}" VerticalAlignment="Center" MouseDown="albumTextBlock_MouseDown"/>
+                            <Image Source="{Binding AlbumCover}" Width="120" Height="120" Margin="5" MouseDown="albumTextBlock_MouseDown"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Orientation="Vertical" Background="AntiqueWhite">
-            <TextBlock Text="Tracks" FontWeight="Bold" Margin="5"/>
-            <StackPanel Name ="trackPanel">                
-            </StackPanel>
+            <TextBlock Text="Tracks" FontWeight="Black" Margin="5"/>
+            <ListBox Name="trackListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="AntiqueWhite">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Name="trackTextBlock" Text="{Binding Name}" FontWeight="Bold" MouseDown="trackTextBlock_MouseDown"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
 
-
         <StackPanel  Name="trackInfoPanel" Grid.Column="3" Orientation="Vertical" Background="LightGray">
-            <TextBlock Text="Track Information" FontWeight="Bold" Margin="5"/>
+            <TextBlock Text="Track Information" FontWeight="Black" Margin="5"/>
+            <ListBox Name="trackInfoListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="LightGray">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Name="trackInfoLabel" Content="{Binding TrackInfo}"></Label>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
     </Grid>
 </Window>

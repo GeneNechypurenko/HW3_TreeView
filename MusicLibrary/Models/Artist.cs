@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 
 namespace MusicLibrary.Models
 {
     public class Artist
     {
-        public List<Album> Albums { get; set; }
+        public ObservableCollection<Album> Albums { get; set; }
         public string Name { get; set; }
         public Artist()
-        { 
-            Albums = new List<Album>();
+        {
+            Albums = new ObservableCollection<Album>();
         }
         public override string ToString() => Name;
     }
