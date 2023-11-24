@@ -15,15 +15,17 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Name ="artistPanel" Grid.Column="0" Orientation="Vertical" Background="MistyRose">
+        <StackPanel Name="artistPanel" Grid.Column="0" Orientation="Vertical" Background="MistyRose">
             <TextBlock Text="Artists" FontWeight="Black" Margin="5"/>
-            <ListBox Name="artistListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="MistyRose">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Name="artistTextBlock" Text="{Binding Name}" MouseDown="artistTextBlock_MouseDown"></TextBlock>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <ListBox Name="artistListBox" FontWeight="Bold" HorizontalAlignment="Center" BorderThickness="0" Background="MistyRose">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Name="artistTextBlock" Text="{Binding Name}" MouseDown="artistTextBlock_MouseDown"></TextBlock>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </ScrollViewer>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Orientation="Vertical" Background="White">
